@@ -1,0 +1,232 @@
+/* --- CSS Styling --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2ff;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: rgb(255, 254, 247);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 60vh;
+}
+
+.page-section {
+    display: none;
+    /* All pages hidden by default, JS handles showing one */
+}
+
+/* Home Page Styling */
+.upcoming-events {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.ullash-img {
+    width: 450px;
+    height: 220px;
+    object-fit: contain;
+}
+
+.freshers-img {
+    width: 472px;
+    height: 220px;
+    object-fit: contain;
+}
+
+.event-card {
+    background-color: #f2f4fc;
+    border-left: 5px solid #007bff;
+    padding: 15px;
+    margin: 10px;
+    width: 45%;
+    border-radius: 5px;
+}
+
+/* Events List Page Styling */
+.event-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.event-item:last-child {
+    border-bottom: none;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #1a8c32;
+}
+
+/* Admin Preview Styling */
+#admin-data-preview {
+    margin-top: 20px;
+}
+
+#admin-data-preview table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#admin-data-preview th,
+#admin-data-preview td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#admin-data-preview th {
+    background-color: #f2f2f2;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Utility Class for responsiveness */
+@media (max-width: 600px) {
+    .event-card {
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+
+/* Event Image Styling */
+.event-img {
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 9px;
+    margin-right: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Better layout for event items */
+.event-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    background-color: #f2f4fc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Event info text alignment */
+.event-info {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.event-info h4 {
+    margin: 0 0 5px;
+    color: #007bff;
+}
+
+.event-info p {
+    margin: 0;
+    color: #555;
+}
+
+/* Buttons alignment */
+.event-item button {
+    flex-shrink: 0;
+}
+
+.event-item {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* .event-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+} */
